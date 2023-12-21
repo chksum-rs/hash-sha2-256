@@ -1,0 +1,20 @@
+[package]
+name = "chksum-hash-sha2-256"
+version = "0.0.0"
+authors = ["Konrad Goławski <konrad@golawski.it>"]
+edition = "2021"
+rust-version = "1.63.0"
+description = "An implementation of SHA-2 256 hash algorithm for batch and stream computation."
+readme = ".cargo/README.md"
+repository = "https://github.com/chksum-rs/hash-sha2-256"
+license = "MIT"
+keywords = ["checksum", "digest", "hash", "sha256", "sha2-256"]
+categories = ["algorithms", "cryptography"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+chksum-hash-core = "0.0.0"
+thiserror = "1.0.51"
